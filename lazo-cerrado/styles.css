@@ -1,0 +1,108 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.caja {
+	background-color: black;
+	margin: 0 auto;
+	padding: 10px;
+	width: 120px;
+	text-align: center;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	overflow: auto;
+	-moz-box-shadow: 0px 3px 5px #474747;
+	-webkit-box-shadow: 0px 3px 5px #474747;
+	box-shadow: 0px 3px 5px #474747;
+}
+.circulo {
+	background-color: #ccc;
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+ 	border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
+	margin: 5px auto;
+}
+#info {
+	font-family: Tahoma;
+	margin: 0 auto;
+	width: 200px;
+	text-align:center;
+}
+h3 {
+	font-weight: bold;
+	font-size: 1em;
+  	text-align: center;
+}
+input[id="empezar"] {
+	visibility: hidden;
+}
+.segundos {
+	font-size: 3em;
+}
+#prompt-form {
+	display: inline-block;
+	padding: 5px 5px 5px 70px;
+	width: 200px;
+	border: 1px solid black;
+	background: white url(https://en.js.cx/clipart/prompt.png) no-repeat left 5px;
+	vertical-align: middle;
+}
+#prompt-form-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#prompt-form-container:before {
+	display: inline-block;
+	height: 100%;
+	content: '';
+	vertical-align: middle;
+}
+#cover-div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	opacity: 0.3;
+}
+#prompt-form input[name="text"] {
+	display: block;
+	margin: 5px;
+	width: 180px;
+}
+.sensor-div {
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+#show-button {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: aquamarine;
+	border: thin solid black;
+}
+#show-button:hover {
+	background-color:aqua;
+}

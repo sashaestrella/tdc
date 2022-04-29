@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Semáforo</title>
+</head>
+<body>
+    <h3>Semáforo (lazo cerrado)</h3>
+    <div class="sensor-div"> 
+        <input type="button" value="Programar sensor" id="show-button">
+    </div>
+
+    <div id="prompt-form-container">
+        <form id="prompt-form">
+          <div id="prompt-message"></div>
+          <input name="text" type="text">
+          <input type="submit" value="Ok">
+          <input type="button" name="cancel" value="Cancelar">
+        </form>
+    </div>
+
+	<div class="caja">
+		<div class="circulo" id="rojo"></div>
+        <div class="circulo" id="amarillo"></div>
+        <div class="circulo" id="verde"></div>
+	</div>
+    
+	<div id="info">
+		<input type="button" id="empezar" value="Empezar"><br>
+		<h5>Segundos restantes</h5>
+		<div id="seg" class="segundos">10</div>
+	</div>
+	
+ 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
